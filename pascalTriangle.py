@@ -1,4 +1,4 @@
-amount = 10
+amount = 15
 ballAmount = 1
 pyramid = [[ballAmount]]
 
@@ -13,4 +13,4 @@ for i in range(amount - 1):
         if (x < len(pyramid[i])):
             x2 = pyramid[i][x] #/2 for percentages, nothing to get the fraction when added up
         pyramid[tI].append(x1 + x2)
-    print(' '.join(str(item) for item in pyramid[tI]))
+    print(" ".join(str(item) for item in pyramid[tI]) + " Total: " + str(2**i))
